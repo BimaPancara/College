@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bima Pancara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-21 08:57:31 AM"/>
+        <attribute name="created" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMjA7MTA6Mzg6NTcgUE07Mjk5Nw=="/>
+        <attribute name="edited" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMjE7MDg6NTc6MzEgQU07NTszMDk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Bil1" type="Integer" array="False" size=""/>
+            <declare name="Bil2" type="Integer" array="False" size=""/>
+            <declare name="Bil3" type="Integer" array="False" size=""/>
+            <declare name="kecil" type="Integer" array="False" size=""/>
+            <declare name="sedang" type="Integer" array="False" size=""/>
+            <declare name="besar" type="Integer" array="False" size=""/>
+            <input variable="Bil1"/>
+            <input variable="Bil2"/>
+            <input variable="Bil3"/>
+            <if expression="Bil1 &lt;= Bil2 &amp;&amp; Bil1 &lt;= Bil3">
+                <then>
+                    <assign variable="kecil" expression="Bil1"/>
+                    <if expression="Bil2 &lt;= Bil3">
+                        <then>
+                            <assign variable="besar" expression="Bil3"/>
+                            <assign variable="sedang" expression="Bil2"/>
+                        </then>
+                        <else>
+                            <assign variable="sedang" expression="Bil3"/>
+                            <assign variable="besar" expression="Bil2"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Bil1 &gt;= Bil2 &amp;&amp; Bil1&lt;= Bil3 &amp;&amp; Bil1 &lt;= Bil2 &amp;&amp; Bil1 &gt;= Bil3">
+                        <then>
+                            <assign variable="sedang" expression="Bil1"/>
+                            <if expression="Bil2 &lt;= Bil3">
+                                <then>
+                                    <assign variable="besar" expression="Bil3"/>
+                                    <assign variable="kecil" expression="Bil2"/>
+                                </then>
+                                <else>
+                                    <assign variable="besar" expression="Bil2"/>
+                                    <assign variable="kecil" expression="Bil3"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Bil1 &gt;= Bil2 &amp;&amp; Bil1 &gt;= Bil3">
+                                <then>
+                                    <if expression="Bil2 &lt;= Bil3">
+                                        <then>
+                                            <assign variable="sedang" expression="Bil3"/>
+                                            <assign variable="kecil" expression="Bil2"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="sedang" expression="Bil2"/>
+                                            <assign variable="kecil" expression="Bil3"/>
+                                        </else>
+                                    </if>
+                                    <assign variable="besar" expression="Bil1"/>
+                                </then>
+                                <else>
+                                    <if expression="Bil1 &gt;= Bil2 &amp;&amp; Bil1&lt;= Bil3 &amp;&amp; Bil1 &gt;= Bil3 &amp;&amp; Bil1&lt;= Bil2">
+                                        <then>
+                                            <assign variable="sedang" expression="Bil1"/>
+                                            <if expression="Bil2 &lt;= Bil3">
+                                                <then>
+                                                    <assign variable="kecil" expression="Bil2"/>
+                                                    <assign variable="besar" expression="Bil3"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="kecil" expression="Bil3"/>
+                                                    <assign variable="besar" expression="Bil2"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <assign variable="sedang" expression="Bil2"/>
+                                            <assign variable="kecil" expression="Bil3"/>
+                                            <assign variable="besar" expression="Bil1"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="kecil" newline="True"/>
+            <output expression="sedang" newline="True"/>
+            <output expression="besar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

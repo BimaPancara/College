@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bima Pancara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-20 10:48:26 PM"/>
+        <attribute name="created" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMjA7MTA6Mzg6NTcgUE07Mjk5Nw=="/>
+        <attribute name="edited" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMjA7MTA6NDg6MjYgUE07MTszMTAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Bil1" type="Integer" array="False" size=""/>
+            <declare name="Bil2" type="Integer" array="False" size=""/>
+            <declare name="Bil3" type="Integer" array="False" size=""/>
+            <declare name="Maks" type="Integer" array="False" size=""/>
+            <input variable="Bil1"/>
+            <input variable="Bil2"/>
+            <input variable="Bil3"/>
+            <if expression="Bil1 &gt;= Bil2">
+                <then>
+                    <assign variable="Maks" expression="Bil1"/>
+                </then>
+                <else>
+                    <assign variable="Maks" expression="Bil2"/>
+                </else>
+            </if>
+            <if expression="Bil3 &gt;= Maks">
+                <then>
+                    <assign variable="Maks" expression="Bil3"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="Maks" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
