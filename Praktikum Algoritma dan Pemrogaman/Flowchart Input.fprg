@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bima Pancara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-18 03:01:23 PM"/>
+        <attribute name="created" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMTg7MDE6MTc6MDggUE07Mjk5Nw=="/>
+        <attribute name="edited" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMTg7MDM6MDE6MjMgUE07NTszMTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Panjang" type="Integer" array="False" size=""/>
+            <declare name="Lebar" type="Integer" array="False" size=""/>
+            <declare name="Luas" type="Integer" array="False" size=""/>
+            <input variable="Panjang"/>
+            <input variable="Lebar"/>
+            <assign variable="Luas" expression="Panjang * Lebar"/>
+            <output expression="Panjang * Lebar" newline="True"/>
+            <if expression="Luas &lt; 50">
+                <then>
+                    <output expression="&quot;Kecil&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Luas &gt;= 50 &amp;&amp; Luas &lt; 100">
+                        <then>
+                            <output expression="&quot;Menengah&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Besar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

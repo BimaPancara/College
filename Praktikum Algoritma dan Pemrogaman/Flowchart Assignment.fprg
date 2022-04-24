@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bima Pancara"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-18 01:48:56 PM"/>
+        <attribute name="created" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMTg7MDE6MTc6MDggUE07Mjk5Nw=="/>
+        <attribute name="edited" value="QmltYSBQYW5jYXJhO0lNQVRTVUtJOzIwMjItMDMtMTg7MDE6NDg6NTYgUE07MTszMTEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Panjang" type="Integer" array="False" size=""/>
+            <declare name="Lebar" type="Integer" array="False" size=""/>
+            <assign variable="Panjang" expression="15"/>
+            <assign variable="Lebar" expression="20"/>
+            <output expression="Panjang * Lebar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
