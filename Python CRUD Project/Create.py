@@ -20,6 +20,7 @@ while zzz==1:
         #print()
         print("Input Error")
     elif perintah=="4":
+        print("Sampai Jumpa Kembali")
         zzz=0
 
 
