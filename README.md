@@ -1,3 +1,3 @@
-# Kuliah
+# College
 Algorithm  and programming Assignments 
 
